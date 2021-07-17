@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <h1>Cat creator</h1>
+  <div class="row">
+    <canvas height="512px" width="512px" class="col-2" id="canva"  #canva ></canvas>
+  </div>
+  <div class="row">
+    <div class="col-1">
+      <button type="button" class="btn btn-primary w-100" (click)="savecanvas()">Save image</button>
+    </div>
+    <div class="col-1">
+      <button type="button" class="btn btn-success w-100" (click)="generate()">Generate cat</button>
+    </div>
+    <div class="col-2 offset-2">
+      <button class="btn btn-secondary w-100" type="button" id="par0" data-bs-toggle="dropdown" aria-expanded="false">
+        Форма морды
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Exotic.png',3)">Экзотическая</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Standard.png',3)">Стандартная</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-secondary w-100" type="button" id="par1" data-bs-toggle="dropdown" aria-expanded="false">
+        Размер ушей
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Small.png',2)">Маленькие</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Medium.png',2)">Средние</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Big.png',2)">Большие </a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-secondary w-100" type="button" id="par2" data-bs-toggle="dropdown" aria-expanded="false">
+        Цвет глаз
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Green.png',1)">Зеленые</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Amber.png',1)">Янтарные</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Blue.png',1)">Голубые</a></li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-secondary w-100" type="button" id="par3" data-bs-toggle="dropdown" aria-expanded="false">
+        Расцветка
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Turtle.png',0)">Черепаховый</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/Ticked.png',0)">Тикированный</a></li>
+        <li><a class="dropdown-item" href="#" (click)="onclick('/imgs/White.png',0)">Белый</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
